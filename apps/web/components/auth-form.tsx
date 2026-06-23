@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 import { z } from 'zod'
+import { safeNext } from '@/lib/safe-next'
 import { createClient } from '@/lib/supabase/client'
 import { Button, FieldError, Input, Label } from './ui'
 
@@ -19,7 +20,7 @@ export function AuthForm({ mode }: { mode: 'sign-in' | 'sign-up' }) {
   const [supabase] = useState(() => createClient())
   const router = useRouter()
   const searchParams = useSearchParams()
-  const nextPath = searchParams.get('next') || '/dashboard'
+  const nextPath = safeNext(searchParams.get('next'))
   const [pending, setPending] = useState(false)
 
   const {

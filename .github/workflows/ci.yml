@@ -42,6 +42,11 @@ jobs:
         run: pnpm format:check
 
       - name: Build · lint · typecheck · test
+        # Public placeholders so the static auth pages prerender; real values are
+        # set in Vercel at deploy time (NEXT_PUBLIC_* are inlined at build).
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: https://placeholder.supabase.co
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: placeholder_anon_key_build_only
         run: pnpm turbo run build lint typecheck test
 
   security-gate:

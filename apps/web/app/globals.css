@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+/* next-themes uses a .dark class on <html>; make dark: utilities follow it. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  color-scheme: light dark;
+}
+
+html,
+body {
+  height: 100%;
+}

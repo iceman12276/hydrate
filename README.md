@@ -12,14 +12,14 @@ See **[docs/PLAN.md](docs/PLAN.md)** for the full implementation plan: stack, mo
 
 ## Diagrams
 
-| Diagram | |
-|---|---|
-| Architecture | [svg](docs/diagrams/01-architecture.svg) · [drawio](docs/diagrams/01-architecture.drawio) |
-| Monorepo structure | [svg](docs/diagrams/02-monorepo-structure.svg) · [drawio](docs/diagrams/02-monorepo-structure.drawio) |
-| Data model (ERD) | [svg](docs/diagrams/03-data-model-erd.svg) · [drawio](docs/diagrams/03-data-model-erd.drawio) |
+| Diagram             |                                                                                                         |
+| ------------------- | ------------------------------------------------------------------------------------------------------- |
+| Architecture        | [svg](docs/diagrams/01-architecture.svg) · [drawio](docs/diagrams/01-architecture.drawio)               |
+| Monorepo structure  | [svg](docs/diagrams/02-monorepo-structure.svg) · [drawio](docs/diagrams/02-monorepo-structure.drawio)   |
+| Data model (ERD)    | [svg](docs/diagrams/03-data-model-erd.svg) · [drawio](docs/diagrams/03-data-model-erd.drawio)           |
 | Reminder scheduling | [svg](docs/diagrams/04-reminder-scheduling.svg) · [drawio](docs/diagrams/04-reminder-scheduling.drawio) |
-| Build roadmap | [svg](docs/diagrams/05-build-roadmap.svg) · [drawio](docs/diagrams/05-build-roadmap.drawio) |
-| User flow | [svg](docs/diagrams/06-user-flow.svg) · [drawio](docs/diagrams/06-user-flow.drawio) |
+| Build roadmap       | [svg](docs/diagrams/05-build-roadmap.svg) · [drawio](docs/diagrams/05-build-roadmap.drawio)             |
+| User flow           | [svg](docs/diagrams/06-user-flow.svg) · [drawio](docs/diagrams/06-user-flow.drawio)                     |
 
 ## Planned stack
 

@@ -1,13 +1,21 @@
 # Tooling caches
 **/.impeccable/
 
-# Node / monorepo (lands as apps are added)
+# Node / monorepo
 node_modules/
 .turbo/
 dist/
 build/
+out/
 .next/
+next-env.d.ts
+.expo/
+coverage/
+*.tsbuildinfo
 *.log
+
+# Rust / Tauri
+**/src-tauri/target/
 
 # Env / secrets
 .env

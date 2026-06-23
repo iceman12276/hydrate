@@ -1,0 +1,16 @@
+# Tooling caches
+**/.impeccable/
+
+# Node / monorepo (lands as apps are added)
+node_modules/
+.turbo/
+dist/
+build/
+.next/
+*.log
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.local

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="drawio" version="26.0.0">
+  <diagram name="Build Roadmap (M0-M10, dependencies)">
+    <mxGraphModel dx="1400" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1500" pageHeight="730" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="M0" value="M0  Monorepo scaffold&#xa;pnpm+turbo, shared, Supabase hosted, CI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="40" y="320" width="165" height="74" as="geometry"/></mxCell>
+        <mxCell id="M1" value="M1  DB · Auth · shared client&#xa;schema + RLS + @supabase/ssr + factory" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="215" y="320" width="165" height="74" as="geometry"/></mxCell>
+        <mxCell id="M2" value="M2  Web logging + dashboard&#xa;quick-add, validated, progress ring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="390" y="320" width="165" height="74" as="geometry"/></mxCell>
+        <mxCell id="M3" value="M3  History + stats&#xa;7/30-day, streak (shared calc)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="565" y="180" width="165" height="74" as="geometry"/></mxCell>
+        <mxCell id="M4" value="M4  Reminder settings + computor&#xa;UI + shared computeFireTimes" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="565" y="460" width="165" height="74" as="geometry"/></mxCell>
+        <mxCell id="M5" value="M5  Mobile core screens&#xa;Expo parity on core screens" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="740" y="120" width="165" height="74" as="geometry"/></mxCell>
+        <mxCell id="M7" value="M7  Desktop (Tauri)&#xa;wrap web + tray + autostart + notify" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="740" y="320" width="165" height="74" as="geometry"/></mxCell>
+        <mxCell id="M8" value="M8  Web in-tab reminders&#xa;best-effort while open" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="740" y="520" width="165" height="74" as="geometry"/></mxCell>
+        <mxCell id="M6" value="M6  Mobile local notifications&#xa;expo-notifications + rolling window" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="915" y="120" width="165" height="74" as="geometry"/></mxCell>
+        <mxCell id="M9" value="M9  A11y + polish&#xa;responsive, ml/oz, contrast" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="1090" y="320" width="165" height="74" as="geometry"/></mxCell>
+        <mxCell id="M10" value="M10  Ship&#xa;EAS stores · Vercel · Tauri installers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="1265" y="320" width="165" height="74" as="geometry"/></mxCell>
+        <mxCell id="rd0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="M0" target="M1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="rd1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="M1" target="M2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="rd2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="M2" target="M3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="rd3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="M2" target="M4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="rd4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="M3" target="M5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="rd5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="M4" target="M5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="rd6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="M5" target="M6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="rd7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="M3" target="M7"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="rd8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="M4" target="M7"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="rd9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="M4" target="M8"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="rd10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="M6" target="M9"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="rd11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="M7" target="M9"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="rd12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="M8" target="M9"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="rd13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="1" source="M9" target="M10"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="rmnote" value="Cross-cutting additions (stack audit):  M0 +CI / lint / pre-commit  ·  M1 +production SMTP email  ·  M2 +Sentry + error boundaries + toast/undo  ·  M3 +charts lib  ·  M4 +react-hook-form + time picker  ·  M9 +a11y lint gate  ·  M10 gated on privacy policy + in-app account deletion + Apple/Play privacy forms + Supabase Pro backups + app icons/splash + PostHog reminder→hydration funnel live" style="text;html=1;align=left;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;spacing=8;fontSize=12;" vertex="1" parent="1"><mxGeometry x="40" y="620" width="1420" height="84" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

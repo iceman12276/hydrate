@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="drawio" version="26.0.0">
+  <diagram name="User Flow">
+    <mxGraphModel dx="1400" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1220" pageHeight="640" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="uf_note" value="Screen journey — same on all platforms; UI differs (shadcn web/desktop vs RN mobile)." style="text;html=1;align=left;fontSize=12;fontStyle=2;" vertex="1" parent="1"><mxGeometry x="40" y="16" width="700" height="22" as="geometry"/></mxCell>
+        <mxCell id="Landing" value="Landing&#xa;(web only)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="60" y="70" width="230" height="66" as="geometry"/></mxCell>
+        <mxCell id="Auth" value="Sign in / Sign up&#xa;+ Google OAuth" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="60" y="220" width="230" height="66" as="geometry"/></mxCell>
+        <mxCell id="Onb" value="Onboarding&#xa;goal, units, tz, notif permission" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1"><mxGeometry x="60" y="370" width="230" height="66" as="geometry"/></mxCell>
+        <mxCell id="Dash" value="Dashboard (home)&#xa;ring, quick-add, recent" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1"><mxGeometry x="470" y="220" width="230" height="66" as="geometry"/></mxCell>
+        <mxCell id="Hist" value="History&#xa;7/30-day, streak" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="880" y="70" width="230" height="66" as="geometry"/></mxCell>
+        <mxCell id="Rem" value="Reminders&#xa;mode, window, quiet -&gt; re-arm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="880" y="220" width="230" height="66" as="geometry"/></mxCell>
+        <mxCell id="Set" value="Settings&#xa;profile, units, tz, devices" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1"><mxGeometry x="880" y="370" width="230" height="66" as="geometry"/></mxCell>
+        <mxCell id="u1" value="Get started" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="Landing" target="Auth"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="u2" value="new user" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;exitX=0.3;exitY=1;entryX=0.3;entryY=0;" edge="1" parent="1" source="Auth" target="Onb"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="u3" value="returning" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="Auth" target="Dash"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="u4" value="finish setup" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;exitX=1;exitY=0.5;entryX=0.25;entryY=1;" edge="1" parent="1" source="Onb" target="Dash"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="400" y="403"/></Array></mxGeometry></mxCell>
+        <mxCell id="u5" value="nav" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;exitX=1;exitY=0.25;entryX=0;entryY=0.5;" edge="1" parent="1" source="Dash" target="Hist"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="u6" value="nav" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="Dash" target="Rem"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="u7" value="nav" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;exitX=1;exitY=0.75;entryX=0;entryY=0.5;" edge="1" parent="1" source="Dash" target="Set"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="u8" value="sign out" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;exitX=0.5;exitY=1;entryX=0.5;entryY=1;" edge="1" parent="1" source="Set" target="Auth"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="995" y="560"/><mxPoint x="175" y="560"/></Array></mxGeometry></mxCell>
+        <mxCell id="u9" value="log water (+ undo)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;exitX=0.7;exitY=0;entryX=0.3;entryY=0;" edge="1" parent="1" source="Dash" target="Dash"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="620" y="175"/></Array></mxGeometry></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

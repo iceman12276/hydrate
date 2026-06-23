@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="drawio" version="26.0.0">
+  <diagram name="Monorepo Structure">
+    <mxGraphModel dx="1400" dy="900" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1280" pageHeight="660" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="root" value="hydrate/   —   pnpm workspaces + Turborepo" style="swimlane;whiteSpace=wrap;html=1;startSize=28;fontStyle=1;fontSize=13;fillColor=none;strokeColor=#888888;swimlaneFillColor=#f7f7f7;fontSize=14;" vertex="1" parent="1"><mxGeometry x="40" y="40" width="1180" height="560" as="geometry"/></mxCell>
+        <mxCell id="cfg" value="Root config:  package.json · pnpm-workspace.yaml · turbo.json · tsconfig.base.json · .npmrc · .env.example" style="text;html=1;align=left;verticalAlign=middle;fillColor=#eeeeee;strokeColor=#999999;spacing=8;fontSize=12;" vertex="1" parent="root"><mxGeometry x="20" y="40" width="1140" height="40" as="geometry"/></mxCell>
+        <mxCell id="apps" value="apps/  —  installable clients" style="swimlane;whiteSpace=wrap;html=1;startSize=28;fontStyle=1;fontSize=13;fillColor=none;strokeColor=#888888;swimlaneFillColor=#eefbe9;" vertex="1" parent="root"><mxGeometry x="20" y="100" width="560" height="440" as="geometry"/></mxCell>
+        <mxCell id="a_web" value="web/   Next.js 15 + shadcn&#xa;app/ (RSC, server actions, manifest)&#xa;components/ui (shadcn, web-only)&#xa;lib/supabase (@supabase/ssr) · lib/notifications" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="apps"><mxGeometry x="20" y="40" width="520" height="100" as="geometry"/></mxCell>
+        <mxCell id="a_mob" value="mobile/   Expo / RN + NativeWind&#xa;app/ (Expo Router screens)&#xa;lib/supabase (expo-secure-store)&#xa;lib/notifications (rolling-window scheduler) · metro.config.js" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="apps"><mxGeometry x="20" y="154" width="520" height="110" as="geometry"/></mxCell>
+        <mxCell id="a_desk" value="desktop/   Tauri v2 (no own UI)&#xa;src-tauri/ (notification, tray, autostart,&#xa;single-instance, deep-link, secure store)&#xa;tauri.conf.json → frontendDist = ../../web/out" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="apps"><mxGeometry x="20" y="278" width="520" height="110" as="geometry"/></mxCell>
+        <mxCell id="pkgs" value="packages/  —  shared libraries" style="swimlane;whiteSpace=wrap;html=1;startSize=28;fontStyle=1;fontSize=13;fillColor=none;strokeColor=#888888;swimlaneFillColor=#fff9e6;" vertex="1" parent="root"><mxGeometry x="600" y="100" width="560" height="270" as="geometry"/></mxCell>
+        <mxCell id="p_shared" value="shared/   @hydrate/shared  (source-only; apps transpile)" style="text;html=1;align=left;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;spacing=6;fontSize=12;" vertex="1" parent="pkgs"><mxGeometry x="20" y="40" width="520" height="30" as="geometry"/></mxCell>
+        <mxCell id="p_sch" value="src/schemas/   Zod: profiles · intake_entries · reminder_settings" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="pkgs"><mxGeometry x="20" y="80" width="520" height="40" as="geometry"/></mxCell>
+        <mxCell id="p_logic" value="src/logic/   goal/progress/streak · day-bucketing · ml↔oz" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="pkgs"><mxGeometry x="20" y="128" width="520" height="40" as="geometry"/></mxCell>
+        <mxCell id="p_rem" value="src/reminders/   computeFireTimes + diff + re-arm orchestrator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="pkgs"><mxGeometry x="20" y="176" width="520" height="40" as="geometry"/></mxCell>
+        <mxCell id="p_sb" value="supabase/   typed client factory + generated types.ts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="pkgs"><mxGeometry x="20" y="224" width="520" height="36" as="geometry"/></mxCell>
+        <mxCell id="sbdir" value="supabase/  —  tracked migrations (applied to the HOSTED project via plugin)" style="swimlane;whiteSpace=wrap;html=1;startSize=28;fontStyle=1;fontSize=13;fillColor=none;strokeColor=#888888;swimlaneFillColor=#f3eefb;" vertex="1" parent="root"><mxGeometry x="600" y="390" width="560" height="150" as="geometry"/></mxCell>
+        <mxCell id="sb_mig" value="migrations/   profiles · intake_entries · reminder_settings&#xa;RLS policies · signup trigger · tz-change trigger" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="sbdir"><mxGeometry x="20" y="40" width="520" height="70" as="geometry"/></mxCell>
+        <mxCell id="sb_cfg" value="Hosted dev + prod projects — no local stack;&#xa;managed via Supabase plugin (apply_migration / gen types)" style="text;html=1;align=left;fillColor=#ffffff;strokeColor=#9673a6;spacing=6;fontSize=12;" vertex="1" parent="sbdir"><mxGeometry x="20" y="116" width="520" height="30" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

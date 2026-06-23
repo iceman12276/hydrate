@@ -26,7 +26,7 @@ export type Database = {
           id?: string
           logged_at?: string
           source?: string
-          user_id: string
+          user_id?: string
         }
         Update: {
           amount_ml?: number

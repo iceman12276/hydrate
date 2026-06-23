@@ -17,6 +17,7 @@ export default tseslint.config(
       '**/coverage/**',
       '**/*.config.*',
       '**/next-env.d.ts',
+      '**/supabase/types.ts',
     ],
   },
   js.configs.recommended,

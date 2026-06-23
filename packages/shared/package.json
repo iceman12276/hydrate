@@ -7,7 +7,8 @@
     ".": "./src/index.ts",
     "./schemas": "./src/schemas/index.ts",
     "./reminders": "./src/reminders/index.ts",
-    "./logic": "./src/logic/index.ts"
+    "./logic": "./src/logic/index.ts",
+    "./supabase": "./supabase/index.ts"
   },
   "scripts": {
     "build": "tsc --noEmit",
@@ -16,6 +17,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
     "luxon": "^3.5.0",
     "zod": "^3.24.1"
   },
